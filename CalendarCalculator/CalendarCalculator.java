@@ -49,7 +49,7 @@ class CalendarCalculator{
         }
         
         //Increment daysLeft by the number of days left in particular month.
-        daysLeft += daysInMonth[month-1] - date;
+        daysLeft += (daysInMonth[month-1] - date) - 1;
         
         //Print out results thus far.
         System.out.println("Days left in month: " + daysLeft);
